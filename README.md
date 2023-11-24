@@ -1,16 +1,33 @@
-# favorite_places
+# Favorite Place
 
-A new Flutter project.
+<a href="https://flutter.dev/">📲 Flutter</a>
+</h1>
+<p align="center"> 
+    The application's function is to register your favorite places with photo, name and location. <br />
+    I apply native mobile concepts and functions such as camera, location and local data.
+</p>
 
-## Getting Started
+<!-- <h1 align="center">
+  <img alt="WeatherDark" title="#DiarioAutista" src="./lib/assets/weather dark.png" />
+  <img alt="WeatherLigth" title="#DiarioAutista" src="./lib/assets/weather ligth.png" />
+</h1> -->
 
-This project is a starting point for a Flutter application.
+### 🛠 Technologies
 
-A few resources to get you started if this is your first Flutter project:
+As seguintes ferramentas foram usadas na construção do projeto:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- [Flutter](https://flutter.dev/)
+- Google's Geocoding API
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### 📦 Packages
+  - google_fonts: ^6.1.0 <br />
+  - uuid: ^3.0.7 <br />
+  - riverpod: ^2.3.2 <br />
+  - flutter_riverpod: ^2.3.2 <br />
+  - image_picker: ^1.0.4 <br />
+  - location: ^5.0.3 <br />
+
+## Author
+  Thallys Freitas  <br/>
+  Contact me: ![Gmail Badge](https://img.shields.io/badge/thallys%40hotmail.com-E--mail-green?style=flat-square&logo=Gmail&logoColor=white&link=mailto:thallys@hotmail.com) |
+![Linkedin Badge](https://img.shields.io/badge/Thallys-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/thallys-freitas-87155074/)
