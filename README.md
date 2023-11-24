@@ -30,4 +30,4 @@ As seguintes ferramentas foram usadas na construção do projeto:
 ## Author
   Thallys Freitas  <br/>
   Contact me: ![Gmail Badge](https://img.shields.io/badge/thallys%40hotmail.com-E--mail-green?style=flat-square&logo=Gmail&logoColor=white&link=mailto:thallys@hotmail.com) |
-![Linkedin Badge](https://img.shields.io/badge/Thallys-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/thallys-freitas-87155074/)
+[![Linkedin Badge](https://img.shields.io/badge/Thallys-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/thallys-freitas-87155074/)](https://www.linkedin.com/in/thallys-freitas-87155074/)
