@@ -1,5 +1,9 @@
+import 'dart:convert';
+
+import 'package:favorite_places/model/place.dart';
 import 'package:flutter/material.dart';
 import 'package:location/location.dart';
+import 'package:http/http.dart';
 
 class LocationInput extends StatefulWidget {
   const LocationInput({super.key});
@@ -9,7 +13,7 @@ class LocationInput extends StatefulWidget {
 }
 
 class _LocationInputState extends State<LocationInput> {
-  Location? _pickedLocation;
+  PlaceLocation? _pickedLocation;
   var _isGettingLocation = false;
 
   void _getCurrentLocation() async {
@@ -41,12 +45,27 @@ class _LocationInputState extends State<LocationInput> {
 
     locationData = await location.getLocation();
 
+    // implementar a visualização da localização do mapa pela API do google maps
+    final lat = locationData.latitude;
+    final lng = locationData.longitude;
+
+    //checando se a lat e lon virão nulas para poder gharantir mais abaixo que não virão nula
+    if (lat == null || lng == null) {
+      return;
+    }
+
+    // final url = Uri.parse('url do goole&key=token');
+    // final response = await http.get(url);
+    // final resData = json.decode(response.body);
+    // final addres = resData['results'][0]['formatted_address'];
+
     setState(() {
+      _pickedLocation = PlaceLocation(
+        latitude: lat,
+        longitude: lng,
+      );
       _isGettingLocation = false;
     });
-
-    print(locationData.latitude);
-    print(locationData.longitude);
   }
 
   @override
