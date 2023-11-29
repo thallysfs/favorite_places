@@ -79,7 +79,7 @@ class _AddPlaceState extends ConsumerState<AddPlace> {
             ElevatedButton.icon(
               onPressed: _savePlace,
               icon: const Icon(Icons.add),
-              label: Text('Novo Lugar'),
+              label: const Text('Novo Lugar'),
             )
           ],
         ),

@@ -1,9 +1,6 @@
-import 'dart:convert';
-
 import 'package:favorite_places/model/place.dart';
 import 'package:flutter/material.dart';
 import 'package:location/location.dart';
-import 'package:http/http.dart';
 
 class LocationInput extends StatefulWidget {
   const LocationInput({super.key});
@@ -20,7 +17,7 @@ class _LocationInputState extends State<LocationInput> {
     Location location = Location();
 
     bool serviceEnabled;
-    PermissionStatus _permissionGranted;
+    PermissionStatus permissionGranted;
     LocationData locationData;
 
     serviceEnabled = await location.serviceEnabled();
@@ -31,10 +28,10 @@ class _LocationInputState extends State<LocationInput> {
       }
     }
 
-    _permissionGranted = await location.hasPermission();
-    if (_permissionGranted == PermissionStatus.denied) {
-      _permissionGranted = await location.requestPermission();
-      if (_permissionGranted != PermissionStatus.granted) {
+    permissionGranted = await location.hasPermission();
+    if (permissionGranted == PermissionStatus.denied) {
+      permissionGranted = await location.requestPermission();
+      if (permissionGranted != PermissionStatus.granted) {
         return;
       }
     }
